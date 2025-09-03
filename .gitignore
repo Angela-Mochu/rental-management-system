@@ -1,0 +1,15 @@
+# Ignore XAMPP temp files
+/xampp/
+
+# Ignore database credentials or sensitive PHP files
+includes/db_connection.php
+
+# Ignore vendor libraries (like for PDF)
+/vendor/
+
+# Ignore logs or temp files
+*.log
+*.tmp
+
+# Ignore node_modules if you add JS deps later
+node_modules/
