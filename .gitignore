@@ -2,7 +2,7 @@
 /xampp/
 
 # Ignore database credentials or sensitive PHP files
-includes/db_connection.php
+
 
 # Ignore vendor libraries (like for PDF)
 /vendor/
