@@ -1,6 +1,7 @@
-## Progress Update - September 11, 2025, 11:55 AM EAT
+## Progress Update - September 11, 2025, 12:00 PM EAT
 - Created database `rental_management` with tables.
 - Set up `db_connection.php` and confirmed connection.
 - Built landing page (`index.php`) with images and light green/white theme.
 - Resolved initial Git push conflict by merging remote and local changes.
 - Added `login.php` with form, styling, and links to forgot password and register pages.
+- Added `register.php` with form for user registration, validation, and redirect to login.php.
