@@ -61,15 +61,15 @@ include 'includes/db_connection.php';
             <p>Charis (Kasarani)</p>
         </div>
         <div class="image-container">
-            <img src="images/apartment2.jpg" alt="Apartment Image 2">
+            <img src="images/apartment1.jpg" alt="Apartment Image 2">
             <p>Peniel House (Ngumba)</p>
         </div>
         <div class="image-container">
-            <img src="images/apartment3.jpg" alt="Apartment Image 3">
+            <img src="images/apartment1.jpg" alt="Apartment Image 3">
             <p>Beniah Apartment (Umoja)</p>
         </div>
         <div class="image-container">
-            <img src="images/apartment4.jpg" alt="Apartment Image 4">
+            <img src="images/apartment1.jpg" alt="Apartment Image 4">
             <p>Eleazar Apartment (Umoja)</p>
         </div>
     </div>

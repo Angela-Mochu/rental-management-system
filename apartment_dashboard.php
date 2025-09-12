@@ -23,7 +23,7 @@ if (!$apartment) {
     $stmt->execute([$_SESSION['user_id'], 'error', "Unknown apartment_id: $apartment_id"]);
 }
 
-$stmt = $pdo->prepare("SELECT house_number, status FROM houses WHERE apartment_id = ? ORDER BY house_number");
+$stmt = $pdo->prepare("SELECT id, house_number, status FROM houses WHERE apartment_id = ? ORDER BY house_number");
 $stmt->execute([$apartment_id]);
 $houses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -107,9 +107,14 @@ $total_amount = $total_water + $total_rent;
             border-radius: 5px;
             color: #ffffff;
             cursor: pointer;
+            display: inline-block; /* Ensure button is visible */
         }
         .house-list button:hover {
             background-color: #78d578;
+        }
+        .no-houses {
+            color: #ff0000;
+            text-align: center;
         }
         .totals {
             background-color: #90EE90;
@@ -161,14 +166,18 @@ $total_amount = $total_water + $total_rent;
         <div class="house-list">
             <h2>Houses</h2>
             <ul>
-                <?php foreach ($houses as $house): ?>
-                    <li>
-                        <?php echo htmlspecialchars($house['house_number']); ?>
-                        <a href="house_dashboard.php?house_id=<?php echo $house['id']; ?>">
-                            <button>View</button>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
+                <?php if (empty($houses)): ?>
+                    <li class="no-houses">No houses found for this apartment.</li>
+                <?php else: ?>
+                    <?php foreach ($houses as $house): ?>
+                        <li>
+                            <?php echo htmlspecialchars($house['house_number']); ?>
+                            <a href="house_dashboard.php?house_id=<?php echo $house['id']; ?>">
+                                <button>View</button>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </ul>
         </div>
         <div class="totals">
