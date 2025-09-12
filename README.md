@@ -1,4 +1,4 @@
-## Progress Update - September 11, 2025, 02:45 PM EAT
+## Progress Update - September 11, 2025, 03:08 PM EAT
 - Created database `rental_management` with tables.
 - Set up `db_connection.php` and confirmed connection.
 - Built landing page (`index.php`) with images and light green/white theme.
@@ -9,3 +9,8 @@
 - Updated `forgot_password.php` to allow direct password reset with phone number, new password, and redirect to login.php.
 - Added `home.php` with logout button and apartment buttons, session management, and redirect logic.
 - Added `apartment_dashboard.php` with house stats, list, and totals section.
+- Fixed `apartment_dashboard.php`: Corrected 'rent' to 'rent_amount' in query.
+- Fixed `apartment_dashboard.php`: Added last_updated column and removed monthly filter to resolve 'column not found' error.
+- Fixed `apartment_dashboard.php`: Seeded apartments table and added logging for unknown apartment IDs.
+- Updated `apartment_dashboard.php` to ensure 'View' buttons are present and functional for house list.
+- Added `house_dashboard.php` with status update, payment, renovation, and navigation features.
