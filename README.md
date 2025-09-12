@@ -1,16 +1,1 @@
-## Progress Update - September 11, 2025, 03:08 PM EAT
-- Created database `rental_management` with tables.
-- Set up `db_connection.php` and confirmed connection.
-- Built landing page (`index.php`) with images and light green/white theme.
-- Resolved initial Git push conflict by merging remote and local changes.
-- Added `login.php` with form, styling, and links to forgot password and register pages.
-- Added `register.php` with form for user registration, validation, and redirect to login.php.
-- Added `login_process.php` to handle user login, session management, and redirect to home.php.
-- Updated `forgot_password.php` to allow direct password reset with phone number, new password, and redirect to login.php.
-- Added `home.php` with logout button and apartment buttons, session management, and redirect logic.
-- Added `apartment_dashboard.php` with house stats, list, and totals section.
-- Fixed `apartment_dashboard.php`: Corrected 'rent' to 'rent_amount' in query.
-- Fixed `apartment_dashboard.php`: Added last_updated column and removed monthly filter to resolve 'column not found' error.
-- Fixed `apartment_dashboard.php`: Seeded apartments table and added logging for unknown apartment IDs.
-- Updated `apartment_dashboard.php` to ensure 'View' buttons are present and functional for house list.
-- Added `house_dashboard.php` with status update, payment, renovation, and navigation features.
+This project is a Rental Management System designed to streamline the management of rental properties. It provides a user-friendly interface for tracking house statuses, recording payments, and managing renovations. The system supports multiple user roles, including admins and caretakers, with features for adding, editing, and deleting users, apartments, and houses. It includes dashboards for viewing detailed reports, with options to export data for record-keeping. Built with a focus on simplicity and functionality, it leverages a database to store and manage all rental-related information efficiently.
